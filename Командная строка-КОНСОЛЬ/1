@@ -19,7 +19,13 @@ xcopy imgs folder /S/E/Y # сору папку со всем её содержи
 
 // Внешние команды
 notepad # Исполняемый файл блокнота Windows 
-
+set # watch пути, по к-м выполняется командная строка
+echo %USERNAME% # get значение переменной
+set var=test # get new or old переменные с set + f(x)=value
+set /a n=5 # при том if plannin' число for дальнейших вычислений /a - ключ
+   # created переменные will exist лишь в текущей сессии, после закрытия консоли nothing saved
+setx TEST_VAR 10 # for creation переменной constantly + переменная и value
+# в 
 
 //
 
