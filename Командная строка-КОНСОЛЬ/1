@@ -1,9 +1,24 @@
+//Консоль
+
+cd/?
+CD Desktop  # параметр в виде пути до нужной папки
+cd C:\Users\user\Desktop # Абсолютный путь папки от диска(корня)
+cd Desktop\folder # Относительной путь(начиная с места, где мы находимся)
+cd .../Downloads
+
+cd D:\Photos  # Переход на другой диск
+D: # Переход в папку командой ранее
+cls # Очистка экрана от всех использованных ранее команд
+
+//
+
 batch-script.bat
 
 @echo off
 chcp 65001
 set error=Ошибка
 set success=Успех
+set /p input=Введите текст
 
 if %ERRORLEVEL% == 1 (
    echo %error%
