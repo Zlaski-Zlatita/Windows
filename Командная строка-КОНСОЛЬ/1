@@ -6,6 +6,8 @@ CD Desktop  # параметр в виде пути до нужной папки
 cd C:\Users\user\Desktop # Абсолютный путь папки от диска(корня)
 cd Desktop\folder # Относительной путь(начиная с места, где мы находимся)
 cd .../Downloads
+cd .. # Чтобы переместиться на один каталог вверх
+
 
 cd D:\Photos  # Переход на другой диск
 D: # Переход в папку командой ранее
@@ -39,6 +41,15 @@ clip <text.txt>
 chcp 65001 # поменять кодировку консоли с OEM-866 на UTF 8, с номером кодовой страницы 
 find string.txt 'Манчестер' # Вывести не всю инфу, а лишь строку *в связке со сторонними файлами
 tasklist # в связке с результатом др команд, список всех запущенных процессов в present (окна в браслете, откр страницы
+
+// 
+PS> cd C:\Users\realpython\Desktop 
+PS> pwd 
+C:\Users\realpython\Desktop 
+PS> mkdir rp_terminal  # Создание новой папки
+
+PS> cd rp_terminal # Затем перейдите в rp_terminal/ и создайте новый файл с именем hello_terminal.py.
+PS> ni hello_terminal.py
 
 
 
