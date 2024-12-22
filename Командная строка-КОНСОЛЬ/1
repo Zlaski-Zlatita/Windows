@@ -1,1 +1,14 @@
+batch-script.bat
 
+@echo off
+chcp 65001
+set error=Ошибка
+set success=Успех
+
+if %ERRORLEVEL% == 1 (
+   echo %error%
+) else (
+   echo %success%
+)
+
+pause
