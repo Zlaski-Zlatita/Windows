@@ -25,7 +25,10 @@ set var=test # get new or old переменные с set + f(x)=value
 set /a n=5 # при том if plannin' число for дальнейших вычислений /a - ключ
    # created переменные will exist лишь в текущей сессии, после закрытия консоли nothing saved
 setx TEST_VAR 10 # for creation переменной constantly + переменная и value
-# в 
+echo %PATH% # в переменной path хранятс\myProgram\p.exe я наборы каталогов, в к-х интерпритатор строки находит исполняемые файлы
+set PATH=%PATH%, C:\Program Files (×86)\myProgram\p.exe # как в случае с блокнотом, добавив путь до программы, по назв-ю исполняемого файла, а не всему пути
+p.exe
+ipconfig > info.txt # инфу надо copy в файл или save в буфер обмена с информацией сетевых адаптеров и переводом в текст.файл
 
 //
 
