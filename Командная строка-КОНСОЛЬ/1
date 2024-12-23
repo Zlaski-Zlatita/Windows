@@ -51,6 +51,13 @@ PS> mkdir rp_terminal  # Создание новой папки
 PS> cd rp_terminal # Затем перейдите в rp_terminal/ и создайте новый файл с именем hello_terminal.py.
 PS> ni hello_terminal.py
 
+touch hello_terminal.py # Linux & MacOs (touch), Windows (ni)
+
+ls # чтобы убедиться, что вы успешно создали файл
+echo # для добавления содержания в файл
+echo 'print("Hello, terminal!")' > hello_terminal.py # Stdout – место назначения по умолчанию для данных, отправляемых программой командной строки. Данные отображаются на экране, но вы можете указать терминалу перенаправить stdout в файл
+
+
 
 
 //
