@@ -130,8 +130,9 @@ for /r imgs %%i in(*.*) do (
 for /l %%i in (0,2,10) do (# позволяет перебирать числа в заданном диапазоне
    echo %%i
 )
-for /f"skip=2        "%%i in (file.txt) do (
-
+for /f"skip=2 delims=,tokens=1,2"        "%%i in (file.txt) do (  # delims - это разделитель, и указываем параметры токенов с кот-ми надо работать 
+     echo %%i
+     echo %%j # вызываем токены
 
 / разбиваем строки на токены
      file.txt
