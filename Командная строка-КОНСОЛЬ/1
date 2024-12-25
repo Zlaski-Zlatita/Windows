@@ -91,13 +91,26 @@ if - условие
 call :F - вид процедуры
 for - цикл
 
+SETLOCAL
+set local_var=Test
+echo %local_var%
+ENDLOCAL   # локальная переменная
+
+EQU - =
+NEQ - !=
+LSS - <
+LEQ - >
+GTR - <=
+GEQ - >=
+
+
 batch-script.bat
 
-@echo off
+@echo off # чтобы не выполнялась каждая команда только результат кода
 chcp 65001
 set error=Ошибка
-set success=Успех
-set /p input=Введите текст
+set success=Успех  # глолобальная переменная
+set /p input=Введите текст # переменая чтобы получать информацию от пользователя
 
 if %ERRORLEVEL% == 1 (
    echo %error%
@@ -105,4 +118,4 @@ if %ERRORLEVEL% == 1 (
    echo %success%
 )
 
-pause
+pause # чтобы консоль оставалась открытой после входа
