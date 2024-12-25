@@ -124,7 +124,7 @@ for %%i in (World, Hello)
    echo%%i
 )
 for /d %%i in (*) do (echo) # /d позволяет вывести название некоторых каталогов 
-for /r imgs %%i i
+for /r imgs %%i in(.) do 
    echo %%i
 )
 
