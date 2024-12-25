@@ -80,11 +80,16 @@ python -m pip list # Чтобы проверить все установленн
 tasklist | find "notepad" # в скобках название процесса
 taskkill /PID 7232  # цифры кода в console, удаление текущего процесса
 md new_folder && copy file.txt new_folder\file.txt # создание пустой папки, и копируем в неё какой-то файл, && 1я команда будет выполнена if 2я выполнена успешно
+md new_folder || copy file.txt new_folder\file.txt # || 2я команда выполнится только если 1я завершится ошибкой 
+ERRORLEVEL=1 # Ошибка
+ERRORLEVEL=0 # Успешно
 
+// batcg-script
 
-
-
-//
+set error=Ошибка - переменная
+if - условие
+call :F - вид процедуры
+for - цикл
 
 batch-script.bat
 
